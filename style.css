@@ -1,0 +1,123 @@
+:root {
+    --base-color: #173714;
+    --secondary-color: #4a704a;
+    --accent-color: #9DDB98;
+    --text-color: #cecece;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--secondary-color) var(--base-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #000000;
+    color: var(--text-color);
+    font-family: system-ui;
+}
+
+.anchor {
+    scroll-margin-top: 54px;
+}
+
+.box {
+    padding: 1%;
+    margin: 15px;
+
+    background-color: var(--base-color);
+    border: 4px solid var(--secondary-color);
+    border-radius: 15px;
+}
+
+.box.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: 100%;
+    height: 40px;
+
+    padding-top: 5px;
+    margin: 0;
+
+    text-align: center;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header li {
+    margin: 0 15px;
+}
+
+.header a {
+    display: inline-block;
+
+    color: var(--text-color);
+    text-decoration: none;
+
+    transition: transform 0.2s;
+}
+
+.header a:hover {
+    transform: scale(1.15);
+    color: var(--accent-color);
+}
+
+.project-title {
+    margin-top: 40px;
+}
+
+.carousel {
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    padding: 10px;
+}
+
+.carousel img {
+    width: 200px;
+    flex: 1;
+    border-radius: 30px;
+
+    transition: transform 0.2s;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+.social-links {
+    background-color: var(--secondary-color);
+    border-radius: 45px;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+
+    transition: transform 0.2s;
+}
+
+.social-links img:hover {
+    transform: scale(1.15);
+}
